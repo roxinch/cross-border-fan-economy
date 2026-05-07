@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cross-Border Fan-Economy Platform · Lead Strategist · Roxin Chang</title>
+<meta name="description" content="Case study: lead-strategist engagement covering proposal, planning, and launch of a cross-border fan-economy venture — including 3-year P&L architecture, 5-module business model, and treasury and compliance framework.">
+<meta property="og:title" content="Cross-Border Fan-Economy Platform — Case Study by Roxin Chang">
+<meta property="og:description" content="Lead strategist for proposal-to-launch of a cross-border fan-economy venture. 3-year $200M+ GMV projection across 5 business modules, with treasury, capital, and compliance frameworks designed from scratch.">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://roxinch.github.io/cross-border-fan-economy/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Cross-Border Fan-Economy Platform case study cover — $200M+ GMV, 5-module architecture, 53-90% margins, 6-month engagement.">
+<meta property="og:url" content="https://roxinch.github.io/cross-border-fan-economy/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cross-Border Fan-Economy Platform — Case Study by Roxin Chang">
+<meta name="twitter:description" content="Lead strategist for proposal-to-launch of a cross-border fan-economy venture. 3-year $200M+ GMV projection across 5 business modules.">
+<meta name="twitter:image" content="https://roxinch.github.io/cross-border-fan-economy/og-image.png">
+<meta name="author" content="Roxin Chang">
+<style>
+  :root {
+    --bg: #fafaf7;
+    --surface: #ffffff;
+    --surface-2: #f5f1ec;
+    --ink: #1a1a1a;
+    --ink-soft: #4a4a4a;
+    --ink-mute: #7a7a7a;
+    --accent: #d97757;
+    --accent-soft: #fde8df;
+    --accent-deep: #b85a3a;
+    --line: #e8e4de;
+    --max: 920px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang TC", "Microsoft JhengHei", Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .container { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
+
+  .topbar {
+    border-bottom: 1px solid var(--line);
+    padding: 16px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    backdrop-filter: saturate(180%) blur(12px);
+    background: rgba(255, 255, 255, 0.85);
+  }
+  .topbar .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .topbar .brand { font-weight: 700; font-size: 15px; letter-spacing: -0.01em; }
+  .topbar .brand span { color: var(--ink-mute); font-weight: 400; }
+  .topbar .links a {
+    color: var(--ink-soft);
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 18px;
+    transition: color 0.2s;
+  }
+  .topbar .links a:hover { color: var(--accent); }
+
+  .hero { padding: 72px 0 56px; border-bottom: 1px solid var(--line); }
+  .eyebrow {
+    display: inline-block;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent-deep);
+    background: var(--accent-soft);
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-size: clamp(34px, 5.5vw, 52px);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+  .subtitle {
+    font-size: clamp(18px, 2.4vw, 22px);
+    color: var(--ink-soft);
+    line-height: 1.45;
+    max-width: 720px;
+    margin-bottom: 32px;
+  }
+  .meta-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 20px 28px;
+    padding: 24px 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 32px;
+  }
+  .meta-item .label {
+    font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--ink-mute); margin-bottom: 4px; font-weight: 600;
+  }
+  .meta-item .value { font-size: 15px; color: var(--ink); font-weight: 500; }
+  .badges { display: flex; gap: 8px; flex-wrap: wrap; }
+  .badge {
+    display: inline-block; padding: 6px 12px;
+    background: var(--surface-2); border: 1px solid var(--line);
+    border-radius: 6px; font-size: 13px; color: var(--ink-soft); font-weight: 500;
+  }
+
+  section { padding: 64px 0; border-bottom: 1px solid var(--line); }
+  section:last-of-type { border-bottom: none; }
+  h2 {
+    font-size: clamp(24px, 3.4vw, 32px);
+    letter-spacing: -0.015em; font-weight: 700; margin-bottom: 8px;
+  }
+  h2 .num { color: var(--accent); font-weight: 600; margin-right: 12px; font-feature-settings: "tnum"; }
+  .lede { font-size: 17px; color: var(--ink-soft); margin-bottom: 32px; max-width: 720px; }
+  p { margin-bottom: 16px; color: var(--ink-soft); font-size: 16px; }
+  p strong { color: var(--ink); font-weight: 600; }
+
+  .impact-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 16px;
+  }
+  .impact-card {
+    background: var(--surface); border: 1px solid var(--line);
+    border-radius: 12px; padding: 24px 20px; text-align: center;
+  }
+  .impact-card .num {
+    display: block; font-size: clamp(28px, 3.6vw, 38px); font-weight: 700;
+    color: var(--accent-deep); line-height: 1; margin-bottom: 8px;
+    font-feature-settings: "tnum"; letter-spacing: -0.02em;
+  }
+  .impact-card .lab { font-size: 13px; color: var(--ink-mute); line-height: 1.4; }
+
+  .col-2 {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  .card {
+    background: var(--surface); border: 1px solid var(--line);
+    border-radius: 12px; padding: 24px;
+  }
+  .card h3 { font-size: 17px; font-weight: 700; margin-bottom: 8px; letter-spacing: -0.01em; }
+  .card .stat { color: var(--accent-deep); font-weight: 700; font-size: 14px; display: block; margin-bottom: 6px; }
+  .card p { font-size: 15px; margin-bottom: 0; }
+
+  /* Module rows */
+  .modules { display: grid; grid-template-columns: 1fr; gap: 14px; margin-top: 12px; }
+  .module {
+    display: grid;
+    grid-template-columns: 200px 1fr 110px;
+    gap: 18px;
+    align-items: stretch;
+  }
+  .module-name {
+    background: var(--accent);
+    color: white;
+    border-radius: 10px;
+    padding: 16px 18px;
+    display: flex; flex-direction: column; justify-content: center;
+  }
+  .module-name strong { font-size: 14px; line-height: 1.3; }
+  .module-name .tag { font-size: 11px; opacity: 0.9; margin-top: 4px; text-transform: uppercase; letter-spacing: 0.06em; }
+  .module-desc {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 16px 20px;
+  }
+  .module-desc p { font-size: 14px; margin: 0; line-height: 1.55; color: var(--ink-soft); }
+  .module-margin {
+    background: var(--accent-soft);
+    border-radius: 10px;
+    padding: 10px 12px;
+    text-align: center;
+    display: flex; flex-direction: column; justify-content: center;
+  }
+  .module-margin .num { font-size: 22px; font-weight: 700; color: var(--accent-deep); line-height: 1; }
+  .module-margin .lab { font-size: 11px; color: var(--accent-deep); margin-top: 4px; font-weight: 600; }
+  @media (max-width: 720px) {
+    .module { grid-template-columns: 1fr; }
+    .module-margin { padding: 14px; }
+  }
+
+  /* Capital flow visualization */
+  .stages { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 12px; }
+  .stage {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--accent);
+    border-radius: 8px;
+    padding: 14px 16px;
+    position: relative;
+  }
+  .stage .num { font-size: 11px; color: var(--accent-deep); font-weight: 700; letter-spacing: 0.08em; margin-bottom: 4px; }
+  .stage strong { display: block; font-size: 14px; margin-bottom: 4px; }
+  .stage p { font-size: 12px; margin: 0; line-height: 1.5; }
+  @media (max-width: 720px) { .stages { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 480px) { .stages { grid-template-columns: 1fr; } }
+
+  ul.bullets { list-style: none; padding: 0; }
+  ul.bullets li {
+    position: relative; padding-left: 22px; margin-bottom: 10px;
+    color: var(--ink-soft); font-size: 16px;
+  }
+  ul.bullets li::before {
+    content: ""; position: absolute; left: 0; top: 10px;
+    width: 8px; height: 8px; background: var(--accent); border-radius: 50%;
+  }
+  ul.bullets li strong { color: var(--ink); font-weight: 600; }
+
+  .pull {
+    border-left: 3px solid var(--accent);
+    padding: 4px 0 4px 24px;
+    margin: 24px 0;
+    color: var(--ink-soft);
+    font-style: italic;
+    font-size: 17px;
+    line-height: 1.5;
+  }
+
+  footer {
+    padding: 48px 0 56px;
+    background: var(--surface-2);
+    border-top: 1px solid var(--line);
+    text-align: center;
+  }
+  footer h3 { font-size: 22px; font-weight: 700; margin-bottom: 12px; letter-spacing: -0.01em; }
+  footer p { font-size: 15px; }
+  footer a { color: var(--accent-deep); text-decoration: none; font-weight: 600; }
+  footer a:hover { text-decoration: underline; }
+  .foot-links { display: flex; justify-content: center; gap: 24px; margin-top: 16px; flex-wrap: wrap; }
+
+  .disclaimer {
+    font-size: 13px; color: var(--ink-mute); background: var(--surface-2);
+    border: 1px solid var(--line); padding: 16px 20px; border-radius: 10px;
+    margin-top: 32px; line-height: 1.55;
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container inner">
+    <div class="brand">Roxin Chang <span>· Case Study</span></div>
+    <div class="links">
+      <a href="#impact">Impact</a>
+      <a href="#challenge">Challenge</a>
+      <a href="#architecture">Architecture</a>
+      <a href="#treasury">Treasury</a>
+      <a href="#outcomes">Outcomes</a>
+    </div>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="container">
+    <span class="eyebrow">Featured Project · Q1–Q2 2026</span>
+    <h1>Cross-Border Fan-Economy Platform: P&L Architecture &amp; Launch Strategy</h1>
+    <p class="subtitle">Lead strategist for the proposal-to-launch phase of a cross-border APAC fan-economy venture — designing the business model, three-year P&L architecture, capital governance, and treasury framework that took the engagement from concept to operational kickoff.</p>
+
+    <div class="meta-grid">
+      <div class="meta-item">
+        <div class="label">My Role</div>
+        <div class="value">Lead Strategist<br>(Independent Consulting)</div>
+      </div>
+      <div class="meta-item">
+        <div class="label">Duration</div>
+        <div class="value">Q1 – Q2 2026<br>(~6-month engagement)</div>
+      </div>
+      <div class="meta-item">
+        <div class="label">Scope</div>
+        <div class="value">Proposal · Planning · Launch<br>(handover at kickoff)</div>
+      </div>
+      <div class="meta-item">
+        <div class="label">Industry</div>
+        <div class="value">Cross-Border IP Entertainment ·<br>Fan-Economy Fintech</div>
+      </div>
+    </div>
+
+    <div class="badges">
+      <span class="badge">Commercial Strategy</span>
+      <span class="badge">P&amp;L Architecture</span>
+      <span class="badge">Business Model Design</span>
+      <span class="badge">Cross-Border Operations</span>
+      <span class="badge">IP &amp; Licensing</span>
+      <span class="badge">Treasury &amp; Compliance</span>
+      <span class="badge">ROI Modeling</span>
+      <span class="badge">Multi-Stakeholder Governance</span>
+    </div>
+  </div>
+</header>
+
+<section id="impact">
+  <div class="container">
+    <h2><span class="num">01</span>Impact at a Glance</h2>
+    <p class="lede">The mandate was to take the venture from concept to "approved-to-launch" with a defensible P&amp;L, a credible capital path, and a treasury framework that could survive both a multi-currency operating environment and an external compliance audit.</p>
+
+    <div class="impact-grid">
+      <div class="impact-card">
+        <span class="num">$200M+</span>
+        <span class="lab">Projected 3-year aggregate GMV across all modules</span>
+      </div>
+      <div class="impact-card">
+        <span class="num">5</span>
+        <span class="lab">Business modules architected and tied into one P&amp;L</span>
+      </div>
+      <div class="impact-card">
+        <span class="num">53–90%</span>
+        <span class="lab">Margin range across modules<br>(events to membership)</span>
+      </div>
+      <div class="impact-card">
+        <span class="num">4</span>
+        <span class="lab">Currencies in the multi-FX settlement design</span>
+      </div>
+      <div class="impact-card">
+        <span class="num">~6 mo</span>
+        <span class="lab">From engagement start to launch kickoff &amp; handover</span>
+      </div>
+      <div class="impact-card">
+        <span class="num">100%</span>
+        <span class="lab">Of investor sign-off milestones met on schedule</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="challenge">
+  <div class="container">
+    <h2><span class="num">02</span>The Challenge</h2>
+    <p class="lede">A consortium of investors and an operating team wanted to build a fan-economy platform spanning live events, retail, member subscriptions, and IP licensing across multiple APAC jurisdictions. They had access to capital and operational ambition; what they lacked was a unified business architecture that connected all of it into a single, defensible P&amp;L — and a treasury design that wouldn't blow up at first contact with regulators.</p>
+
+    <div class="col-2">
+      <div class="card">
+        <span class="stat">Five revenue streams · one platform</span>
+        <h3>Module integration</h3>
+        <p>Live events, e-commerce, physical retail, member subscriptions, and IP licensing each had their own unit economics and operating cadence. They needed to be designed as <em>one ecosystem</em> — where flows reinforced each other (events drive membership, membership drives e-commerce, e-commerce reinforces IP value) rather than competing for the same wallet.</p>
+      </div>
+      <div class="card">
+        <span class="stat">Multiple jurisdictions</span>
+        <h3>Cross-border financial complexity</h3>
+        <p>Revenue inflow in 4+ currencies; outflow to vendors, talent, and partners in another set; settlement to investors in yet another. A naive treasury would have eaten margin on FX losses alone and failed audit on every settlement cycle.</p>
+      </div>
+      <div class="card">
+        <span class="stat">Capital governance</span>
+        <h3>Investor risk tolerance</h3>
+        <p>Lead investor was willing to commit a large initial tranche but needed traceability and milestone-gated release. Operating team needed enough working capital to deliver. Bridging the two without giving either side a reason to pull out required an explicit capital-governance framework with budget caps, milestone payments, and reconciliation cadences.</p>
+      </div>
+      <div class="card">
+        <span class="stat">High-margin / low-risk pursuit</span>
+        <h3>P&amp;L defensibility</h3>
+        <p>Investors are right to be skeptical of fan-economy P&amp;Ls — they're often built on optimistic conversion math. The model had to survive being challenged by independent finance reviewers; that meant grounded conversion assumptions, transparent cost structures, and clearly-flagged sensitivities.</p>
+      </div>
+      <div class="card">
+        <span class="stat">Compliance &amp; reputation</span>
+        <h3>Payment infrastructure choice</h3>
+        <p>Choice of payment infrastructure had cascading effects: settlement speed, audit trail integrity, escrow capability, and credit-line access all hinged on it. The platform also needed real-time multi-party split-billing — non-trivial across borders — for any of the live-event / retail flows to work.</p>
+      </div>
+      <div class="card">
+        <span class="stat">Multi-stakeholder alignment</span>
+        <h3>Decision rights at speed</h3>
+        <p>Investor, operations team, payment provider, and regional partners all had veto power over different surfaces. Without an explicit decision-rights matrix, every issue would escalate to the lead investor — slowing delivery to a crawl.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="role">
+  <div class="container">
+    <h2><span class="num">03</span>My Role &amp; Mandate</h2>
+    <p class="lede">As Lead Strategist for the proposal-to-launch phase, I owned the architecture work end-to-end and the executive-level communication that surrounded it. The mandate concluded at operational kickoff — the venture continues operating under separate leadership, with subsequent strategy modifications outside the scope of this case study.</p>
+
+    <ul class="bullets">
+      <li><strong>Business architecture:</strong> designed the five-module ecosystem, defined how each module reinforced the others, and produced the unified three-year P&amp;L</li>
+      <li><strong>P&amp;L &amp; ROI modeling:</strong> authored the financial model from cost stack to revenue projections; ran sensitivity analysis on conversion, ticketing capture, and member-tier mix</li>
+      <li><strong>Capital governance:</strong> designed the two-mode capital injection structure, milestone-payment schedule, and budget-cap mechanism</li>
+      <li><strong>Treasury &amp; compliance:</strong> structured the multi-currency settlement architecture, account-tier hierarchy (top / sub / escrow / fee / loyalty), and selected the regulated payment infrastructure partner</li>
+      <li><strong>IP licensing strategy:</strong> sequenced IP module as Phase 2 (post-credit-line establishment) to optimize capital efficiency and reduce upfront risk</li>
+      <li><strong>Stakeholder alignment:</strong> ran the cadence with the lead investor, operating team, and payment partner; built the decision-rights matrix that survived through launch</li>
+      <li><strong>Documentation &amp; handover:</strong> produced the artifacts (proposal, ROI model, treasury runbook, governance framework) used by the post-launch operating team</li>
+    </ul>
+
+    <div class="pull">"A fan-economy platform either looks dazzling on a slide or survives a CFO's red pen. The interesting work is making it do both."</div>
+  </div>
+</section>
+
+<section id="architecture">
+  <div class="container">
+    <h2><span class="num">04</span>Five-Module Business Architecture</h2>
+    <p class="lede">The platform was structured as five interlocking modules — each profitable on its own, each amplifying the next. The key insight: high-margin streams (membership, payment fees) subsidize lower-margin but high-traffic streams (events, e-commerce) and create a flywheel that compounds rather than competes.</p>
+
+    <div class="modules">
+      <div class="module">
+        <div class="module-name">
+          <strong>Live Events</strong>
+          <span class="tag">Module 01</span>
+        </div>
+        <div class="module-desc">
+          <p>Flagship awards-show events, major artist tours, and frequent intimate fan engagements. Two tiers: arena-scale for traffic and brand visibility, mid-scale signing-style events for cash-flow velocity and recurring engagement. Tickets are partially reserved for member-tier priority access — feeding the membership flywheel.</p>
+        </div>
+        <div class="module-margin">
+          <div class="num">29–66%</div>
+          <div class="lab">Gross margin</div>
+        </div>
+      </div>
+
+      <div class="module">
+        <div class="module-name">
+          <strong>Member Platform</strong>
+          <span class="tag">Module 02</span>
+        </div>
+        <div class="module-desc">
+          <p>Three-tier subscription: standard ($30/yr) for breadth, VIP ($300/yr) for revenue concentration, and an invitation-only top tier for high-net-worth fans (annual fees individually negotiated). Standard tier seeds the ecosystem; VIP guarantees ticket access; top tier is treated as a separate HNW CRM stream not booked in the public P&amp;L.</p>
+        </div>
+        <div class="module-margin">
+          <div class="num">90%+</div>
+          <div class="lab">Gross margin</div>
+        </div>
+      </div>
+
+      <div class="module">
+        <div class="module-name">
+          <strong>E-Commerce + Retail</strong>
+          <span class="tag">Module 03</span>
+        </div>
+        <div class="module-desc">
+          <p>Online merchandise hub plus a phased build-out of physical flagship stores, designed as O2O lead-capture points for the membership tier. Limited-edition drops, themed pop-ups, and pre-order capability for cash-flow forward-pull. Reference benchmark: established Asia-Pacific idol-merch flagships averaging mid-six-figure USD monthly revenue per store.</p>
+        </div>
+        <div class="module-margin">
+          <div class="num">~30%</div>
+          <div class="lab">Gross margin</div>
+        </div>
+      </div>
+
+      <div class="module">
+        <div class="module-name">
+          <strong>Payment Infrastructure</strong>
+          <span class="tag">Module 04</span>
+        </div>
+        <div class="module-desc">
+          <p>A 3% technology fee on platform GMV via a regulated cross-border payment infrastructure partner. Zero variable cost — this module is pure margin built on top of activity already happening elsewhere on the platform. Also delivers a strategic by-product: 100,000+ high-intent payment-card-on-file users as a direct CRM asset.</p>
+        </div>
+        <div class="module-margin">
+          <div class="num">100%</div>
+          <div class="lab">Gross margin</div>
+        </div>
+      </div>
+
+      <div class="module">
+        <div class="module-name">
+          <strong>IP Licensing</strong>
+          <span class="tag">Module 05 · Phase 2</span>
+        </div>
+        <div class="module-desc">
+          <p>IP acquisition, sub-licensing, and co-branded partnership royalties — sequenced into Phase 2 (after the platform's credit line and trust score with the payment infrastructure are established). Larger IP builds (TV, film, theme park) treated as separate project-financed initiatives outside this P&amp;L.</p>
+        </div>
+        <div class="module-margin">
+          <div class="num">Phase 2</div>
+          <div class="lab">Deferred</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="treasury">
+  <div class="container">
+    <h2><span class="num">05</span>Capital &amp; Treasury Structure</h2>
+    <p class="lede">A platform of this complexity stands or falls on its treasury design. Two core decisions defined the architecture: a milestone-gated capital injection model (so the lead investor never overcommits ahead of evidence) and a four-stage transaction lifecycle that turned the platform's GMV into auditable, reconcilable, escrow-backed cash flow.</p>
+
+    <h3 style="font-size: 17px; margin-top: 24px; margin-bottom: 8px; font-weight: 700;">Two Capital Injection Modes (chosen by the lead investor)</h3>
+    <div class="col-2">
+      <div class="card">
+        <span class="stat">Mode A · Full commitment</span>
+        <h3>Large initial tranche, phased release</h3>
+        <p>An eight-figure initial commitment, with a smaller working-capital tranche released to launch the first major project. Subsequent investments paced against operational cadence and milestone evidence — no automatic disbursement.</p>
+      </div>
+      <div class="card">
+        <span class="stat">Mode B · Staged commitment</span>
+        <h3>Small tranche, scale on traction</h3>
+        <p>A smaller working-capital injection sufficient to launch the first project, with re-investment decisions made post-results. Lower upfront exposure for the investor, with clear "earn-the-next-tranche" performance gates.</p>
+      </div>
+    </div>
+
+    <h3 style="font-size: 17px; margin-top: 32px; margin-bottom: 8px; font-weight: 700;">Four-Stage Transaction Lifecycle</h3>
+    <p style="font-size: 15px; color: var(--ink-soft); margin-bottom: 12px;">Every flow on the platform — ticket sales, e-commerce, membership, IP royalties — followed the same four-stage lifecycle, giving finance a single reconciliation language across all modules:</p>
+    <div class="stages">
+      <div class="stage">
+        <div class="num">STAGE 01</div>
+        <strong>Order created</strong>
+        <p>Customer commitment recorded. Funds not yet captured.</p>
+      </div>
+      <div class="stage">
+        <div class="num">STAGE 02</div>
+        <strong>Payment captured</strong>
+        <p>Funds in escrow. Multi-currency normalized to settlement currency.</p>
+      </div>
+      <div class="stage">
+        <div class="num">STAGE 03</div>
+        <strong>Fulfillment confirmed</strong>
+        <p>Service delivered (event attended, item shipped, IP delivered). Triggers escrow release.</p>
+      </div>
+      <div class="stage">
+        <div class="num">STAGE 04</div>
+        <strong>Settlement &amp; reconciliation</strong>
+        <p>Multi-party split-billing executed. Receipts archived. Audit trail closed.</p>
+      </div>
+    </div>
+
+    <h3 style="font-size: 17px; margin-top: 32px; margin-bottom: 8px; font-weight: 700;">Account Hierarchy (sub-account structure inside the payment infrastructure)</h3>
+    <ul class="bullets" style="margin-top: 8px;">
+      <li><strong>Top account</strong> — single inflow point for all platform GMV, multi-currency aggregation</li>
+      <li><strong>Sub-accounts</strong> — one per business module; flows tagged for module-level P&amp;L visibility</li>
+      <li><strong>Escrow / freeze account</strong> — holds funds until fulfillment confirmed; protects against pre-event refund exposure</li>
+      <li><strong>Platform revenue account</strong> — captures the 3% payment-tech fee separate from operational P&amp;L</li>
+      <li><strong>Loyalty / coupon liability account</strong> — segregated to keep marketing spend out of revenue recognition</li>
+    </ul>
+
+    <div class="pull">"The treasury isn't where the strategy lives — but it's where the strategy either survives audit or doesn't. Every business model decision was tested against 'can finance close this on the last day of the quarter without help'."</div>
+  </div>
+</section>
+
+<section id="outcomes">
+  <div class="container">
+    <h2><span class="num">06</span>Outcomes &amp; Handover</h2>
+    <p class="lede">The engagement concluded at operational kickoff with all approval milestones met, the operating team standing on a documented foundation, and the venture continuing under separate post-launch leadership.</p>
+
+    <div class="col-2">
+      <div class="card">
+        <h3>Investor sign-off achieved</h3>
+        <p>Each gated milestone (proposal approval, capital structure agreement, payment partnership signed, first project budget release) reached on the agreed schedule — no slipped gates, no renegotiated terms.</p>
+      </div>
+      <div class="card">
+        <h3>P&amp;L survived independent review</h3>
+        <p>The three-year financial model held up through finance and audit-side review without a structural rewrite. Sensitivity analysis on conversion assumptions, ticket-capture rates, and member-tier mix passed scrutiny.</p>
+      </div>
+      <div class="card">
+        <h3>Treasury operational from day one</h3>
+        <p>Multi-currency settlement, escrow-backed transaction lifecycle, and account hierarchy were live at launch — no scrambled retrofit, no audit findings on the first reconciliation cycle.</p>
+      </div>
+      <div class="card">
+        <h3>Operating team set up for autonomy</h3>
+        <p>Documentation, decision-rights matrix, and runbooks were complete enough that post-launch leadership could continue without consultative dependency on the engagement team.</p>
+      </div>
+    </div>
+
+    <h2 style="margin-top: 56px;"><span class="num">07</span>What I Took Away</h2>
+    <ul class="bullets">
+      <li><strong>The treasury decision is the strategy decision.</strong> In any cross-border venture, the architecture you defend in the boardroom and the architecture finance can actually close the books on must be the same architecture. Designing them together from day one is exponentially cheaper than reconciling them later.</li>
+      <li><strong>Sequence high-margin / low-risk modules first.</strong> The membership tier and payment-fee module had near-zero variable cost and 90%+ margins. Front-loading them gave the platform cash-flow stability before the lower-margin streams (events, retail) were exposed to operational risk.</li>
+      <li><strong>Capital governance &gt; capital amount.</strong> A milestone-gated commitment of moderate size beats a large open-ended commitment, every time. The investor gets risk control, the operator gets sustained access, and the engagement team gets clear "evidence we hit X" definitions instead of reputational pressure.</li>
+      <li><strong>Defensibility is a design property, not a defense.</strong> P&amp;L models that survive scrutiny aren't ones with the most optimistic numbers — they're ones with the most legible assumptions and the most explicit sensitivities. Building that in from the start is the only way to keep momentum when independent reviewers arrive.</li>
+      <li><strong>End engagements at a defined boundary.</strong> Defining a clear "concluded at launch" boundary protected both the engagement and the venture — the operating team got autonomy without ambiguity, and the engagement avoided the gravity well of becoming permanent.</li>
+    </ul>
+
+    <div class="disclaimer">
+      <strong>Note:</strong> This case study describes my work as Lead Strategist during the proposal, planning, and launch phases of an active cross-border venture (Q1–Q2 2026). I authored the artifacts and structural decisions described herein. The venture continues operating under separate leadership; subsequent strategy modifications, operational changes, and updated financial projections after the launch boundary are outside the scope of this case study and not represented here. Specific entity names, partner identities, geographic detail, capital figures, artist or event identities, and proprietary financial data have been moderately anonymized; structural decisions, ranges, and architectural choices remain accurate.
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <h3>Want to talk about commercial strategy, cross-border business architecture, or P&amp;L design?</h3>
+    <p>I'm open to fully remote senior PM, Operations, Strategy, and Chief of Staff roles.</p>
+    <div class="foot-links">
+      <a href="https://roxinch.github.io/project-fuzzy-search/">Project Fuzzy Search →</a>
+      <a href="https://roxinch.github.io/cross-border-player-surge/">Cross-Border Player Surge →</a>
+      <a href="mailto:roxinch@gmail.com">roxinch@gmail.com</a>
+      <a href="https://www.linkedin.com/in/roxinchang/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/roxinch" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
